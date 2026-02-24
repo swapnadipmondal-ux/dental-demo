@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Amit Sharma | Advanced Dental Care</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+html{scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{color:#333;background:#f5f7fa;}
+
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:rgba(15,76,129,0.9);
+backdrop-filter:blur(8px);
+padding:15px 0;
+text-align:center;
+z-index:1000;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:500;
+transition:0.3s;
+}
+nav a:hover{color:#ffd700;}
+
+section{padding:100px 20px;max-width:1200px;margin:auto;}
+.section-title{text-align:center;margin-bottom:50px;font-size:28px;}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1588776814546-bf8e90f7b17f');
+background-size:cover;
+background-position:center;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+.hero h1{font-size:45px;}
+.hero p{margin:20px 0;font-size:18px;}
+.btn{
+display:inline-block;
+background:#0f4c81;
+color:white;
+padding:12px 28px;
+margin:10px;
+border-radius:5px;
+text-decoration:none;
+transition:0.3s;
+}
+.btn:hover{background:#08345c;transform:scale(1.05);}
+
+/* COUNTERS */
+.counters{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+.counter-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+.counter{font-size:32px;color:#0f4c81;font-weight:700;}
+
+/* SERVICES */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.service-card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+text-align:center;
+}
+.service-card:hover{
+transform:translateY(-10px);
+background:#0f4c81;
+color:white;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.testimonial{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* APPOINTMENT */
+.appointment{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+form input, form textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+form button{
+padding:12px;
+background:#0f4c81;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+/* FLOAT BUTTONS */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+.top-btn{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#0f4c81;
+color:white;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+background:#08345c;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+<h1>Advanced Dental Care</h1>
+<p>Dr. Amit Sharma | 10+ Years Experience | 5000+ Happy Patients</p>
+<a href="#appointment" class="btn">Book Appointment</a>
+<a href="tel:6296314411" class="btn">Call Now</a>
+</section>
+
+<section id="about">
+<h2 class="section-title">Why Choose Us</h2>
+<div class="counters">
+<div class="counter-box">
+<div class="counter" data-target="10">0</div>
+<p>Years Experience</p>
+</div>
+<div class="counter-box">
+<div class="counter" data-target="5000">0</div>
+<p>Happy Patients</p>
+</div>
+<div class="counter-box">
+<div class="counter" data-target="98">0</div>
+<p>Success Rate %</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="service-card"><h3>Root Canal</h3><p>Painless advanced treatment.</p></div>
+<div class="service-card"><h3>Dental Implants</h3><p>Permanent tooth replacement.</p></div>
+<div class="service-card"><h3>Smile Design</h3><p>Cosmetic dental makeover.</p></div>
+<div class="service-card"><h3>Teeth Cleaning</h3><p>Professional scaling & polishing.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Patient Testimonials</h2>
+<div class="testimonials">
+<div class="testimonial">
+⭐⭐⭐⭐⭐  
+<p>Excellent service and friendly staff.</p>
+<strong>- Rahul S.</strong>
+</div>
+<div class="testimonial">
+⭐⭐⭐⭐⭐  
+<p>Best dental clinic in town.</p>
+<strong>- Priya M.</strong>
+</div>
+</div>
+</section>
+
+<section id="appointment">
+<h2 class="section-title">Book Appointment</h2>
+<div class="appointment">
+<div>
+<img src="https://images.unsplash.com/photo-1588776814546-bf8e90f7b17f" width="100%" style="border-radius:10px;">
+</div>
+<div>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="date" required>
+<textarea placeholder="Message"></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<p>📍 Raiganj, West Bengal</p>
+<p>📞 6296314411</p>
+<p>🕒 Mon-Sat: 9AM - 8PM</p>
+</section>
+
+<footer>
+<p>© 2026 Dr. Amit Sharma | Designed by SM Web Studio</p>
+</footer>
+
+<a href="https://wa.me/916296314411" class="whatsapp">💬</a>
+<div class="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<script>
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter=>{
+counter.innerText='0';
+const updateCounter=()=>{
+const target=+counter.getAttribute('data-target');
+const c=+counter.innerText;
+const increment=target/200;
+if(c<target){
+counter.innerText=`${Math.ceil(c+increment)}`;
+setTimeout(updateCounter,10);
+}else{
+counter.innerText=target;
+}
+};
+updateCounter();
+});
+</script>
+
+</body>
+</html>
